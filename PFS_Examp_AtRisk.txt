@@ -1,0 +1,6 @@
+Interval	Years	Lower	Upper	AtRisk
+1	0	1	72	140
+2	1	73	110	98
+3	2	111	144	76
+4	3	145	166	59
+5	4	167	177	47
