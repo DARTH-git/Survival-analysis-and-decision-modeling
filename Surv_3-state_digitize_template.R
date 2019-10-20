@@ -80,11 +80,14 @@ v_dw <- 1 / (1 + d_r) ^ (times)   # discount weight
 
 # 1. use the function digitise() to translate the digitised OS and PFS data into patient level information
 
-##2.Create IPD and KM data for the OS curves
+digitise("OS_Examp.txt","OS_Examp_AtRisk.txt", nevent_inp= 52, km_output="KMdata_OS.txt",ipd_output="IPDdata_OS.txt")
+
+
+##2.Create IPD and KM data for the OS curves 
+IPD.OS  <- make.ipd(ipd_files = c("IPDdata_OS.txt") ,ctr = 1,var.labs = c("time","event","arm"))
 
 ##3.Create IPD and KM data for the PFS curves
 
-##4.Link the IPD files across the two arms of the trial for 
 
 ##########################    Analysis #########################
 
